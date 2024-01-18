@@ -1,0 +1,18 @@
+first we have crreated normal routes then we need to create the controllers where main coding of the routes are written and export it to the contact routes then using them in the server.js 
+
+in order to accept the data from the client we have need to have middleware otherwise it wil give us the undefined that why we use app.use(express.json());
+
+
+if the body is empty than we need to handle this error we can either write code in the logic of router or we can handle it through middleware by making file like constants(not accurate need to watch again)
+
+whenever we need to interact with the mongodb we get a promise thats why we need to use expres async handler it can also catch error we don't need to write try catch
+
+after we have to connect VScode with the database then create the connection_string for mongoose in order to communicate with db the string is in the env file amd connection code is in the config>dbConnection
+
+
+after we have create the logic in the contactController to fetch the data from the database 
+
+thenin order to register the data in the database we use userroutes and userController as same as contactController
+
+then comes the jwt token is needed to get the authentication used for verifying the user
+
